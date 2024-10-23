@@ -1,0 +1,46 @@
+.footer {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid grey;
+    }
+
+    .discord {
+      color: rgb(108, 3, 228);
+      font-size: 2rem;
+    }
+    .telegram {
+      color: rgb(80, 157, 245);
+      font-size: 2rem;
+    }
+    .mail {
+      color: rgb(255, 156, 6);
+      font-size: 2rem;
+    }
+    .website {
+      color: rgb(6, 255, 60);
+      font-size: 2rem;
+    }
+    .text {
+      font-size: 0.8rem;
+    }
+  }
+}
